@@ -22,7 +22,7 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 #rbenv current ruby version
 function parse_rbenv_ruby_version {
-rbenv version 2> /dev/null | sed -e 's/ .*//'
+rbenv version 2> /dev/null | sed -e 's/ .*//' -e 's/\(.*\)/\ \(\1\)/'
 }
 
 
@@ -38,5 +38,5 @@ git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\ \[\1\]/'
 
 #prompt color
 #export PS1='\[\e[1;32m\]\u\[\e[m\]@\[\e[1;35m\]\h:\[\e[0m\e[1;34m\]\W\[\e[1;31m\]$(parse_git_branch_and_add_brackets)\[\e[m\] $ '
-export PS1='\[\e[1;32m\]\u\[\e[m\]@\[\e[1;35m\]\h:\[\e[0m\e[1;34m\]\W\[\e[1;33m\] ($(parse_rbenv_ruby_version))\[\e[1;31m\]$(parse_git_branch_and_add_brackets)\[\e[m\] $ '
+export PS1='\[\e[1;32m\]\u\[\e[m\]@\[\e[1;35m\]\h:\[\e[0m\e[1;34m\]\W\[\e[1;33m\]$(parse_rbenv_ruby_version)\[\e[1;31m\]$(parse_git_branch_and_add_brackets)\[\e[m\] $ '
 
