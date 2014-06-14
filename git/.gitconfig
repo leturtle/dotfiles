@@ -1,0 +1,13 @@
+[color]
+	ui = auto
+	status = auto
+	diff = auto
+	branch = auto
+	interactive = auto
+[color "decorate"]
+[alias]
+	st = status
+[core]
+	ignorecase = false
+[push]
+	default = matching
