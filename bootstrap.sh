@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
 cd "$(dirname "${BASH_SOURCE}")"
-DOTFILES_ROOT=$(pwd)
 BACKUP_DIR="$HOME/.dotfiles.bak"
 
 link_file () {
@@ -31,7 +30,7 @@ backup_file () {
   echo "backup $HOME/$basename to $BACKUP_DIR"
 }
 
-for dotfile in $(find "$DOTFILES_ROOT" -depth 2 -name '.*')
+for dotfile in $(find "$(pwd)" -depth 2 -name '.*')
 do
   link_file "$dotfile" 
 done
