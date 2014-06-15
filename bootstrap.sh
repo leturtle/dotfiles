@@ -35,4 +35,7 @@ do
   link_file "$dotfile" 
 done
 
-
+for initscript in $(find "$(pwd)" -depth 2 -name "init.*")
+do
+  /usr/bin/env osascript "$initscript"  
+done
