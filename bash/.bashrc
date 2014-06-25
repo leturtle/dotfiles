@@ -1,3 +1,5 @@
+ulimit -n 2048
+
 #alias
 alias ll='ls -alFh'
 
