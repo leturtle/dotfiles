@@ -14,7 +14,10 @@ export LANG="en_US.UTF-8"
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
 #python
-export PATH=/usr/local/share/python:$PATH
+#export PATH=/usr/local/share/python:$PATH
+
+#java home
+export JAVA_HOME=`/usr/libexec/java_home`
 
 #rbenv
 export RBENV_ROOT=/usr/local/var/rbenv
