@@ -2,6 +2,7 @@ ulimit -n 2048
 
 #alias
 alias ll='ls -alFh'
+alias e='emacs'
 
 #config
 export CLICOLOR=1
@@ -15,6 +16,9 @@ export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
 #python
 #export PATH=/usr/local/share/python:$PATH
+
+#php
+export PATH="$(brew --prefix homebrew/php/php56)/bin:$PATH"
 
 #java home
 export JAVA_HOME=`/usr/libexec/java_home`
