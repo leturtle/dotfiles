@@ -9,8 +9,12 @@
 ;; use space instead of tabs
 (setq-default indent-tabs-mode nil)
 
-;; show column number
+;; show current column number
 (column-number-mode 1)
+
+;; aways show line number
+(global-linum-mode 1)
+(setq linum-format "%d ")
 
 ;; set fill column to 80
 (setq-default fill-column 80)
@@ -20,3 +24,6 @@
 
 ;; delete all trailing white space on save
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
+
+;; enable auto parenthese and quotes
+(electric-pair-mode 1)

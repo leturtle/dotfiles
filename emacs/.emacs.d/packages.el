@@ -8,10 +8,11 @@
 
 (defvar required-packages
   '(
-    markdown-mode
     monokai-theme
+    markdown-mode
     nginx-mode
     php-mode
+    web-mode
     column-marker
     )
   )
