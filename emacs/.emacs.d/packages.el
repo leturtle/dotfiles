@@ -2,8 +2,8 @@
 (require 'package)
 (add-to-list 'package-archives
   '("melpa" . "http://melpa.milkbox.net/packages/") t)
-(add-to-list 'package-archives
-  '("marmalade" . "http://marmalade-repo.org/packages/") t)
+;; (add-to-list 'package-archives
+;;   '("marmalade" . "http://marmalade-repo.org/packages/") t)
 (package-initialize)
 
 (defvar required-packages
@@ -14,10 +14,14 @@
     php-mode
     web-mode
     column-marker
+    auto-complete
+    ac-etags
+    flycheck
     )
   )
 
-(require 'cl)
+;; http://stackoverflow.com/questions/10092322/how-to-automatically-install-emacs-packages-by-specifying-a-list-of-package-name
+(setq url-http-attempt-keepalives nil)
 
 ;; method to check if all packages are installed
 (defun packages-installed-p ()
