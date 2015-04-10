@@ -14,7 +14,7 @@
 
 ;; aways show line number
 (global-linum-mode 1)
-(setq linum-format "%d ")
+(setq linum-format "%3d ")
 
 ;; set fill column to 80
 (setq-default fill-column 80)
