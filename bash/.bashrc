@@ -6,7 +6,7 @@ alias e='emacs'
 
 #config
 export CLICOLOR=1
-export LSCOLORS='exfxcxdxbxegedabagacad'  
+export LSCOLORS='exfxcxdxbxegedabagacad'
 
 #locale
 export LANG="en_US.UTF-8"
@@ -18,7 +18,9 @@ export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 #export PATH=/usr/local/share/python:$PATH
 
 #php
-export PATH="$(brew --prefix homebrew/php/php56)/bin:$PATH"
+if which brew > /dev/null && brew list | grep php > /dev/null; then
+    export PATH="$(brew --prefix homebrew/php/php56)/bin:$PATH"
+fi
 
 #java home
 export JAVA_HOME=`/usr/libexec/java_home`
@@ -48,4 +50,3 @@ git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\ \[\1\]/'
 #prompt color
 #export PS1='\[\e[1;32m\]\u\[\e[m\]@\[\e[1;35m\]\h:\[\e[0m\e[1;34m\]\W\[\e[1;31m\]$(parse_git_branch_and_add_brackets)\[\e[m\] $ '
 export PS1='\[\e[1;32m\]\u\[\e[m\]@\[\e[1;35m\]\h:\[\e[0m\e[1;34m\]\W\[\e[1;33m\]$(parse_rbenv_ruby_version)\[\e[1;31m\]$(parse_git_branch_and_add_brackets)\[\e[m\] $ '
-
