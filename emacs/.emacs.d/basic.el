@@ -6,6 +6,9 @@
 ;; disable auto save
 (setq auto-save-default nil)
 
+;; disable file lock
+(setq create-lockfiles nil)
+
 ;; use space instead of tabs
 (setq-default indent-tabs-mode nil)
 
