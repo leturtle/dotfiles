@@ -17,6 +17,7 @@
     auto-complete
     ac-etags
     flycheck
+    find-file-in-project
     )
   )
 
