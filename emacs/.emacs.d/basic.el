@@ -28,5 +28,8 @@
 ;; delete all trailing white space on save
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
+;; show parenthese matched
+(show-paren-mode 1)
+
 ;; enable auto parenthese and quotes
 (electric-pair-mode 1)
