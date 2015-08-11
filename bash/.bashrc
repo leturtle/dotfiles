@@ -48,5 +48,5 @@ function parse_git_branch_and_add_brackets {
 }
 
 #prompt color
-#export PS1='\[\e[1;32m\]\u\[\e[m\]@\[\e[1;35m\]\h:\[\e[0m\e[1;34m\]\W\[\e[1;33m\]$(parse_rbenv_ruby_version)\[\e[1;31m\]$(parse_git_branch_and_add_brackets)\[\e[m\] $ '
-export PS1='\[\e[1;32m\]\u\[\e[m\]@\[\e[1;35m\]\h\[\e[m\]:\[\e[0m\e[1;34m\]\W\[\e[1;33m\]$(parse_git_branch_and_add_brackets)\[\e[m\] $ '
+export PS1='\[\e[1;32m\]\u\[\e[m\]@\[\e[1;35m\]\h:\[\e[0m\e[1;34m\]\W\[\e[1;33m\]$(parse_rbenv_ruby_version)\[\e[1;31m\]$(parse_git_branch_and_add_brackets)\[\e[m\] $ '
+#export PS1='\[\e[1;32m\]\u\[\e[m\]@\[\e[1;35m\]\h\[\e[m\]:\[\e[0m\e[1;34m\]\W\[\e[1;33m\]$(parse_git_branch_and_add_brackets)\[\e[m\] $ '
