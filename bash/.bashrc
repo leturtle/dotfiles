@@ -3,6 +3,7 @@ ulimit -n 2048
 #alias
 alias ll='ls -alFh'
 alias e='emacs'
+alias b='bundle exec'
 
 #config
 export CLICOLOR=1
@@ -26,7 +27,7 @@ fi
 export JAVA_HOME=`/usr/libexec/java_home`
 
 #rbenv
-export RBENV_ROOT=/usr/local/var/rbenv
+export RBENV_ROOT=~/.rbenv
 
 #rbenv bash completion
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
