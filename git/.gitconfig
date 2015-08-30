@@ -9,5 +9,6 @@
 	st = status
 [core]
 	ignorecase = false
+	editor = /usr/local/bin/emacs
 [push]
 	default = matching
