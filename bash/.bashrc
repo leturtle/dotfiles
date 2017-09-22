@@ -8,6 +8,8 @@ alias b='bundle exec'
 #config
 export CLICOLOR=1
 export LSCOLORS='exfxcxdxbxegedabagacad'
+export HISTSIZE=10000
+export HISTFILESIZE=10000
 
 #locale
 export LANG="en_US.UTF-8"
@@ -20,7 +22,7 @@ export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
 #php
 if which brew > /dev/null && brew list | grep php > /dev/null; then
-    export PATH="$(brew --prefix homebrew/php/php56)/bin:$PATH"
+    export PATH="$(brew --prefix homebrew/php/php71)/bin:$PATH"
 fi
 
 #java home
