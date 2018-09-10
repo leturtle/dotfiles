@@ -22,7 +22,7 @@ export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
 #php
 if which brew > /dev/null && brew list | grep php > /dev/null; then
-    export PATH="$(brew --prefix homebrew/php/php71)/bin:$PATH"
+    export PATH="$(brew --prefix php@7.1)/bin:$PATH"
 fi
 
 #java home
