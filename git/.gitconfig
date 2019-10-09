@@ -5,8 +5,6 @@
 	branch = auto
 	interactive = auto
 [color "decorate"]
-[alias]
-	st = status
 [core]
 	ignorecase = false
 	editor = /usr/local/bin/emacs

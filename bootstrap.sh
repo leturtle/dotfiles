@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 
 BACKUP_DIR=$HOME/.dotfiles.bak
 
